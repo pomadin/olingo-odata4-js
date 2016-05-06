@@ -30,7 +30,6 @@
     }
   ],
   "scripts": {
-    "preinstall": "npm --prefix ./grunt-config/custom-tasks/rat install"
   },
   "devDependencies": {
     "chai": "^2.0.0",
@@ -45,5 +44,8 @@
     "grunt-nuget": "^0.1.3",
     "mocha": "^2.1.0",
     "xmldom": "^0.1.19"
+  },
+  "browser": {
+	"./lib/odata/net.js": "./lib/odata/net-browser.js"
   }
 }
